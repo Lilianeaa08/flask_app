@@ -1,0 +1,131 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("/static/analise.jpg");
+    background-size: cover; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container {
+    max-width: 310px;
+    padding: 10px 10px;
+    margin-top: 150px;
+    margin-left: 420px; 
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border-color: #57374E;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.result {
+    
+    position: absolute; 
+    top: 71%; 
+    left: calc(32% + 400px); 
+    transform: translateX(-40%); 
+    max-width: 800px; 
+    text-align:justify;
+}
+
+.texto{
+    color: #c9c6df;
+    font-size: 11px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+h3 {
+    text-align: center;
+    color: #ccc9e0;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 40px;
+}
+
+.input-field {
+    width: 70%;
+    margin-top: 5px; 
+    margin-left: 25px;
+    padding: 20px;
+    font-size: 11px;
+    color: #e7e5f5;
+    border: 0.5px solid #212141;
+    border-radius: 8px;
+    background-color: #0A0B1D;
+    overflow-wrap: break-word;
+    white-space: pre-line; 
+    resize: none; /
+}
+
+.input-field:hover {
+    background-color: #3F1D30;
+    border: 0.5px solid #371929;
+}
+
+.btn,
+.btn-clear {
+    display: inline-block; 
+    width: 65px;
+    padding: 5px;
+    margin-top: 30px; 
+    margin-left: 85px;
+    font-size: 11px;
+    color: #e7e5f5;
+    background-color: #3F1D30;
+    border: 0.5px solid #371929;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-clear {
+    margin-left: 6px; 
+}
+
+.btn:hover,
+.btn-clear:hover {
+    background-color: #9e608c;
+}
+
+.new-container {
+    max-width: 320px;
+    padding: 20px;
+    margin: 150px auto; 
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border-color: #a17997;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+p {
+    color: #fff;
+    font-size: 13px;}
+
+h2 {
+        color: #d2cfe9;
+        position: absolute;
+        top: calc(28% - 150px); 
+        left: calc(36% + 400px); 
+        transform: translate(-55%);
+        text-align:center
+}
+
+.message-text {
+    font-size: 10.5px;
+    line-height: 1.6;
+    margin: 4px;
+    padding: 6px;
+    border-radius: 10px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Recomendação</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <script>
+        function clearInput() {
+            document.querySelector('.input-field').value = '';
+        }
+
+    
+        window.addEventListener('load', function() {
+            resizeTextarea(document.querySelector('.input-field'));
+        });
+
+        function resizeTextarea(textarea) {
+            textarea.style.height = "auto";
+            textarea.style.height = (textarea.scrollHeight) + "px";
+            textarea.style.resize = "none";
+        }
+
+        function ocultarConteudo() {
+            var paragrafo = document.querySelector('.result');
+            paragrafo.style.display = 'none'; 
+        }
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            var contentDiv = document.getElementById('content');
+            contentDiv.style.display = contentDiv.style.display === 'none' ? 'block' : 'none';
+        });
+
+    </script>
+
+    <h2> Seja bem-vindo ao sistema de recomendação de destinos turísticos </h2>
+    <div class="container">
+        <h3>Em que posso ajudá-lo?</h3>
+        <form action="{{ url_for('adicionar_dado') }}" method="post">
+            <div class="form-group">
+                <textarea type="text" name="conteudo" class="input-field" placeholder="Exemplo: eu moro na cidade de xxx, gostaria de viajar para xxx."></textarea>
+                <button id="toggleButton" type="submit" class="btn">Enviar</button>
+                <button type="button" class="btn-clear" onclick="clearInput(); ocultarConteudo()"> Remover </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="result">
+        <p class="texto">{{ recomendacao }}</p>
+    </div>
+</body>
+</html>

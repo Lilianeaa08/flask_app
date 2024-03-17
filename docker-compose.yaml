@@ -1,0 +1,29 @@
+version: '3.3'
+
+services:
+  mongodb:
+    build: ./mongo/
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo/data:/data/db
+    networks:
+      - dockercompose
+  
+  flask:
+    depends_on: 
+      - mongodb
+    build: ./flask/
+    ports:
+      - "5000:5000"
+    restart: always
+    volumes:
+      - "/home/liliane/DOCKER/app_flask/flask:/app"
+    networks: 
+      - dockercompose
+    env_file:
+      - /home/liliane/DOCKER/docker_file/config/.env
+
+networks:
+  dockercompose:

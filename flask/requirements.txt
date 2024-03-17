@@ -1,0 +1,8 @@
+Flask
+requests
+pymongo
+flask_pymongo
+pandas
+unidecode
+openai
+python-dotenv
