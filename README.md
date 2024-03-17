@@ -1,4 +1,4 @@
-#### Projetos com Docker
+#### Aplicação com Docker
 
 1. *Criação de Imagem Docker Personalizada*
    - Objetivo: Construir uma imagem Docker para uma aplicação web simples (por exemplo, uma aplicação Node.js ou Python Flask).
