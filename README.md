@@ -1,7 +1,7 @@
 #### Aplicação com Docker
 
 1. *Criação de Imagem Docker Personalizada*
-   - Objetivo: Construir uma imagem Docker para uma aplicação web simples (por exemplo, uma aplicação Node.js ou Python Flask).
+   - Objetivo: Construir uma imagem Docker para uma aplicação web simples
    - Tarefas: Escrever um Dockerfile, construir a imagem, e rodá-la localmente.
 
 2. *Docker Networking*
@@ -10,7 +10,7 @@
 
 3. *Docker Volumes*
    - Objetivo: Demonstrar a persistência de dados usando volumes Docker.
-   - Tarefas: Criar um volume Docker e usá-lo em um container para persistir dados (por exemplo, banco de dados).
+   - Tarefas: Criar um volume Docker e usá-lo em um container para persistir dados.
 
 4. *Multi-Stage Builds*
    - Objetivo: Otimizar a construção de uma imagem Docker utilizando multi-stage builds.
