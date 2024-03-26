@@ -7,4 +7,4 @@
 3. *Docker Volumes*
 4. *Docker-Compose*
 
-*Link da Aplicação em uso: https://www.linkedin.com/posts/activity-7175252955003031552-cznw?utm_source=share&utm_medium=member_desktop
+*Link da Aplicação em uso*: https://www.linkedin.com/posts/activity-7175252955003031552-cznw?utm_source=share&utm_medium=member_desktop
