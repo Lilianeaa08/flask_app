@@ -1,17 +1,9 @@
-#### Aplicação com Docker
+#### PROJETO
+### Este projeto consiste na Dockerização de aplicação Flask utilizando o modelo GPT-3.5-turbo da OpenAI para proporcionar recomendações personalizadas de destinos turísticos aos usuários. Para garantir a persistência dos dados, foi integrado a imagem do MongoDB na aplicação.
 
+### Neste projeto foram utilizados os seguintes componentes do docker:
 1. *Criação de Imagem Docker Personalizada*
-   - Objetivo: Construir uma imagem Docker para uma aplicação web simples
-   - Tarefas: Escrever um Dockerfile, construir a imagem, e rodá-la localmente.
-
 2. *Docker Networking*
-   - Objetivo: Criar uma rede Docker e conectar dois containers para que eles possam se comunicar.
-   - Tarefas: Definir uma rede bridge e rodar dois containers na mesma rede, permitindo que eles se comuniquem.
-
 3. *Docker Volumes*
-   - Objetivo: Demonstrar a persistência de dados usando volumes Docker.
-   - Tarefas: Criar um volume Docker e usá-lo em um container para persistir dados.
+4. *Docker-Compose*
 
-4. *Multi-Stage Builds*
-   - Objetivo: Otimizar a construção de uma imagem Docker utilizando multi-stage builds.
-   - Tarefas: Escrever um Dockerfile com múltiplos estágios para construir uma aplicação e reduzir o tamanho final da imagem.
